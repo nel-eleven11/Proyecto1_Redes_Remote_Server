@@ -90,6 +90,12 @@ Make sure you have a GCP project selected, billing enabled, and both Cloud Run a
 ### Deploy from source:
 
 ```bash
+gcloud auth login
+export PROJECT_ID=<your-project-id>
+gcloud config set project $PROJECT_ID
+```
+
+```bash
 gcloud run deploy mcp-server --no-allow-unauthenticated --region=us-central1 --source .
 ```
 
