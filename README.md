@@ -93,6 +93,12 @@ Make sure you have a GCP project selected, billing enabled, and both Cloud Run a
 gcloud run deploy mcp-server --no-allow-unauthenticated --region=us-central1 --source .
 ```
 
+Using proxy:
+
+```bash
+gcloud run services proxy mcp-server --region=us-central1
+```
+
 ---
 
 ## 🔧 Configuration
